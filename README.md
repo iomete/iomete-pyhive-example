@@ -10,12 +10,12 @@ Initialize project by running following commands
 python3 -m virtualenv .env;
 source .env/bin/activate;
 
-python3 -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 To run application use
 ```bash
-python3 main.py
+python main.py
 ```
 
 Note that you will need to change connection properties in `connection.py` file
