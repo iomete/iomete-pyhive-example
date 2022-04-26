@@ -39,4 +39,4 @@ def create_connection(connection_args: ConnectionArgs):
     transport.setCustomHeaders(
         {"Authorization": "Basic " + base64.b64encode(credentials.encode()).decode().strip()})
 
-    return hive.connect(thrift_transport=transport)
+    return hive.connect(database=connection_args.database, thrift_transport=transport)
